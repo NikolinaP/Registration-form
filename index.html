@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="form.js"></script>
+</head>
+<body>
+    <form name="Form" onsubmit="return validateForm()">
+        <h2>Registration Form</h2>
+        <div class="box">
+            <label>Full Name</label>
+            <input type="text" name="name" id="name">
+            <div class="error" id="nameErr"></div>
+        </div>
+        <div class="box">
+            <label>Email</label>
+            <input type="text" name="email" id="email">
+            <div class="error" id="emailErr"></div>
+        </div>
+        <div class="box">
+            <label>Mobile Number</label>
+            <input type="text" name="mobile" id="mobile" maxlength="10">
+            <div class="error" id="mobileErr"></div>
+        </div>
+        <div class="box">
+            <label for="">Country</label>
+            <select name="country" id="country">
+                <option>Select</option>
+                <option>North Macedonia</option>
+                <option>UK</option>
+            </select>
+            <div class="error" id="countryErr"></div>
+        </div>
+        <div class="box">
+            <label for="">Gender</label>
+            <div class="form-inline" id="gender">
+                <label><input type="radio" name="gender" value="Male">Male</label>
+                <label><input type="radio" name="gender" value="Female">Female</label>
+            </div>
+            <div class="error" id="genderErr"></div>
+        </div>
+        <div class="box subscribe">
+            <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
+            <label for="newsletter">Subsciribe to get updates</label>
+        </div>
+        <div class="box">
+            <a href="info.html">More info</a>
+        </div>
+        <div class="box">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>
