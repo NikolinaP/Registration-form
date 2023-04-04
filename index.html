@@ -12,22 +12,22 @@
     <form name="Form" onsubmit="return validateForm()">
         <h2>Registration Form</h2>
         <div class="box">
-            <label>Full Name</label>
+            <label>Full Name *</label>
             <input type="text" name="name" id="name">
             <div class="error" id="nameErr"></div>
         </div>
         <div class="box">
-            <label>Email</label>
+            <label>Email *</label>
             <input type="text" name="email" id="email">
             <div class="error" id="emailErr"></div>
         </div>
         <div class="box">
-            <label>Mobile Number</label>
+            <label>Mobile Number *</label>
             <input type="text" name="mobile" id="mobile" maxlength="10">
             <div class="error" id="mobileErr"></div>
         </div>
         <div class="box">
-            <label for="">Country</label>
+            <label for="">Country *</label>
             <select name="country" id="country">
                 <option>Select</option>
                 <option>North Macedonia</option>
@@ -36,7 +36,11 @@
             <div class="error" id="countryErr"></div>
         </div>
         <div class="box">
-            <label for="">Gender</label>
+            <label>City</label>
+            <input type="text" name="city" id="city">
+        </div>
+        <div class="box">
+            <label for="">Gender *</label>
             <div class="form-inline" id="gender">
                 <label><input type="radio" name="gender" value="Male">Male</label>
                 <label><input type="radio" name="gender" value="Female">Female</label>
